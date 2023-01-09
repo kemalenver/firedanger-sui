@@ -8,9 +8,96 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var manager = LocationObserver()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        switch manager.appState {
+        case .checkingLocation:
+            FindingLocationView()
+        case .userLocationNotFound:
+            LocationNotFoundView()
+        case .fetchingFireDangerData:
+            FindingLocationView()
+        case .ready:
+            MainView(manager: manager)
+        case .regionNotSupported:
+            UnsupportedLocationView()
+        case .noFireDangerData:
+            NoDataErrorView()
+        }
+    }
+}
+
+struct MainView: View {
+    
+    @State private var tabSelection = 0
+    @StateObject var manager = LocationObserver()
+    
+    var todayButtonTint: Color {
+        return tabSelection == 0 ? manager.todayForecastModel!.tintColor() : manager.tomorrowForecastModel!.tintColor()
+    }
+    
+    var tomorrowButtonTint: Color {
+        return tabSelection == 1 ? manager.tomorrowForecastModel!.tintColor() : manager.todayForecastModel!.tintColor()
+    }
+    
+    var todayUnderLineTont: Color {
+        return tabSelection == 0 ? todayButtonTint : .clear
+    }
+    
+    var tomorrowUnderLineTont: Color {
+        return tabSelection == 1 ? tomorrowButtonTint : .clear
+    }
+    
+    var body: some View {
+        
+        ZStack(alignment:.top) {
+            
+            GeometryReader { geometry in
+                
+                HStack(alignment: .center, spacing: 0) {
+                    VStack {
+                        Button("Today") {
+                            tabSelection = 0
+                        }
+                        .frame(width: geometry.size.width / 2, height: 50)
+                        .background(Color.clear)
+                        .foregroundColor(todayButtonTint)
+                        
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(todayUnderLineTont)
+                            .padding(0)
+                    }
+                    
+                    VStack {
+                        Button("Tomorrow") {
+                            tabSelection = 1
+                        }
+                        .frame(width: geometry.size.width / 2, height: 50)
+                        .foregroundColor(tomorrowButtonTint)
+                        .background(Color.clear)
+                        
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(tomorrowUnderLineTont)
+                            .padding(0)
+                    }
+                }
+            }
+            .frame(height: 50)
+            .zIndex(1)
+            
+            TabView(selection: $tabSelection) {
+                FireDataView(forecastModel: self.manager.todayForecastModel!).tag(0)
+                FireDataView(forecastModel: self.manager.tomorrowForecastModel!).tag(1)
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+            .ignoresSafeArea()
+        }
     }
 }
 

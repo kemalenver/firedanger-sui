@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF32981A28B5A88300021B83 /* FireDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32981928B5A88300021B83 /* FireDataView.swift */; };
+		CF32981B28B5A88300021B83 /* FireDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32981928B5A88300021B83 /* FireDataView.swift */; };
 		CF888FDC278019B9003CA93B /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FDB278019B9003CA93B /* Tests_iOS.swift */; };
 		CF888FDE278019B9003CA93B /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FDD278019B9003CA93B /* Tests_iOSLaunchTests.swift */; };
 		CF888FE8278019B9003CA93B /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FE7278019B9003CA93B /* Tests_macOS.swift */; };
@@ -17,6 +19,25 @@
 		CF888FEE278019B9003CA93B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FC4278019B9003CA93B /* ContentView.swift */; };
 		CF888FEF278019B9003CA93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF888FC5278019B9003CA93B /* Assets.xcassets */; };
 		CF888FF0278019B9003CA93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF888FC5278019B9003CA93B /* Assets.xcassets */; };
+		CF88900427803AB1003CA93B /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888FFF27803AB1003CA93B /* regions.json */; };
+		CF88900527803AB1003CA93B /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888FFF27803AB1003CA93B /* regions.json */; };
+		CF88900627803AB1003CA93B /* FireDangerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900027803AB1003CA93B /* FireDangerMap.swift */; };
+		CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900027803AB1003CA93B /* FireDangerMap.swift */; };
+		CF88900C27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
+		CF88900D27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
+		CF8B96FC29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
+		CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
+		CF8B9700296693E000C27E05 /* SwiftyXMLCoding in Frameworks */ = {isa = PBXBuildFile; productRef = CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */; };
+		CF8B97042966CD6900C27E05 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* ForecastModel.swift */; };
+		CF8B97052966CD6900C27E05 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* ForecastModel.swift */; };
+		CF8B9707296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
+		CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
+		CF8B970A296BB5A000C27E05 /* FindingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */; };
+		CF8B970B296BB5A000C27E05 /* FindingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */; };
+		CF8B970D296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */; };
+		CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */; };
+		CF8B9710296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
+		CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF32981928B5A88300021B83 /* FireDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDataView.swift; sourceTree = "<group>"; };
 		CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firedanger_suiApp.swift; sourceTree = "<group>"; };
 		CF888FC4278019B9003CA93B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF888FC5278019B9003CA93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +71,16 @@
 		CF888FE3278019B9003CA93B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF888FE7278019B9003CA93B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		CF888FE9278019B9003CA93B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		CF888FFF27803AB1003CA93B /* regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
+		CF88900027803AB1003CA93B /* FireDangerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireDangerMap.swift; sourceTree = "<group>"; };
+		CF88900127803AB1003CA93B /* ForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		CF88900327803AB1003CA93B /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		CF88900F27803B40003CA93B /* nsw_test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = nsw_test.gpx; path = Shared/nsw_test.gpx; sourceTree = "<group>"; };
+		CF8B96FB29668CE600C27E05 /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
+		CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsupportedLocationView.swift; sourceTree = "<group>"; };
+		CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingLocationView.swift; sourceTree = "<group>"; };
+		CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotFoundView.swift; sourceTree = "<group>"; };
+		CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8B9700296693E000C27E05 /* SwiftyXMLCoding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +119,7 @@
 		CF888FBD278019B8003CA93B = {
 			isa = PBXGroup;
 			children = (
+				CF88900F27803B40003CA93B /* nsw_test.gpx */,
 				CF888FC2278019B9003CA93B /* Shared */,
 				CF888FD1278019B9003CA93B /* macOS */,
 				CF888FDA278019B9003CA93B /* Tests iOS */,
@@ -97,8 +131,12 @@
 		CF888FC2278019B9003CA93B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CF8B9713296BC63900C27E05 /* Data */,
+				CF8B9712296BC5ED00C27E05 /* Error States */,
 				CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */,
 				CF888FC4278019B9003CA93B /* ContentView.swift */,
+				CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */,
+				CF32981928B5A88300021B83 /* FireDataView.swift */,
 				CF888FC5278019B9003CA93B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -141,6 +179,28 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		CF8B9712296BC5ED00C27E05 /* Error States */ = {
+			isa = PBXGroup;
+			children = (
+				CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */,
+				CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */,
+				CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */,
+			);
+			path = "Error States";
+			sourceTree = "<group>";
+		};
+		CF8B9713296BC63900C27E05 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF88900127803AB1003CA93B /* ForecastModel.swift */,
+				CF8B96FB29668CE600C27E05 /* LocationObserver.swift */,
+				CF88900027803AB1003CA93B /* FireDangerMap.swift */,
+				CF88900327803AB1003CA93B /* Properties.swift */,
+				CF888FFF27803AB1003CA93B /* regions.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +217,9 @@
 			dependencies = (
 			);
 			name = "firedanger-sui (iOS)";
+			packageProductDependencies = (
+				CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */,
+			);
 			productName = "firedanger-sui (iOS)";
 			productReference = CF888FCA278019B9003CA93B /* firedanger-sui.app */;
 			productType = "com.apple.product-type.application";
@@ -222,7 +285,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					CF888FC9278019B9003CA93B = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -249,6 +312,9 @@
 				Base,
 			);
 			mainGroup = CF888FBD278019B8003CA93B;
+			packageReferences = (
+				CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */,
+			);
 			productRefGroup = CF888FCB278019B9003CA93B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF888FEF278019B9003CA93B /* Assets.xcassets in Resources */,
+				CF88900427803AB1003CA93B /* regions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF888FF0278019B9003CA93B /* Assets.xcassets in Resources */,
+				CF88900527803AB1003CA93B /* regions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8B970D296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */,
+				CF32981A28B5A88300021B83 /* FireDataView.swift in Sources */,
+				CF8B97042966CD6900C27E05 /* ForecastModel.swift in Sources */,
+				CF88900C27803AB1003CA93B /* Properties.swift in Sources */,
+				CF8B9710296BB60700C27E05 /* NoDataErrorView.swift in Sources */,
+				CF8B970A296BB5A000C27E05 /* FindingLocationView.swift in Sources */,
+				CF8B96FC29668CE600C27E05 /* LocationObserver.swift in Sources */,
 				CF888FED278019B9003CA93B /* ContentView.swift in Sources */,
+				CF8B9707296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */,
+				CF88900627803AB1003CA93B /* FireDangerMap.swift in Sources */,
 				CF888FEB278019B9003CA93B /* firedanger_suiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +385,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */,
+				CF32981B28B5A88300021B83 /* FireDataView.swift in Sources */,
+				CF8B97052966CD6900C27E05 /* ForecastModel.swift in Sources */,
+				CF88900D27803AB1003CA93B /* Properties.swift in Sources */,
+				CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */,
+				CF8B970B296BB5A000C27E05 /* FindingLocationView.swift in Sources */,
+				CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */,
 				CF888FEE278019B9003CA93B /* ContentView.swift in Sources */,
+				CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */,
+				CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */,
 				CF888FEC278019B9003CA93B /* firedanger_suiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +467,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -440,6 +527,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -468,12 +556,13 @@
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the fire danger where you are";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,12 +587,13 @@
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the fire danger where you are";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,9 +615,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -553,9 +645,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -622,6 +716,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
@@ -641,6 +736,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
@@ -703,6 +799,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GottaGetSwifty/SwiftyXMLKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */;
+			productName = SwiftyXMLCoding;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF888FBE278019B8003CA93B /* Project object */;
 }
