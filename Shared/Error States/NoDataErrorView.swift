@@ -14,7 +14,7 @@ struct NoDataErrorView: View {
             VStack(alignment: .center, spacing: 64) {
                 
                 ZStack(alignment: .center) {
-                    Image("warning")
+                    Image(.warning)
                         .resizable()
                         .frame(width: 72, height: 72)
                         .aspectRatio(contentMode: .fit)
@@ -45,7 +45,7 @@ struct NoDataErrorView: View {
                         print("Retry button was tapped")
                     } label: {
                         VStack {
-                            Image("retry")
+                            Image(.retry)
                                 .resizable()
                                 .tint(Color("darkTint"))
                                 .frame(width: 24, height: 24)

@@ -66,7 +66,7 @@ class NSWForecastModel {
     
     func icon() -> UIImage? {
         if warningLevel == .level0 {
-            return UIImage(named: "timelapse")
+            return UIImage(resource: .timelapse)
         } else {
             return UIImage(named: "fire1")
         }

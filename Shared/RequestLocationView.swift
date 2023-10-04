@@ -10,7 +10,7 @@ import SwiftUI
 struct RequestLocationView: View {
     var body: some View {
         VStack {
-            Image("flame")
+            Image(.flame)
                 .resizable()
                 .foregroundColor(Color("loadingTint"))
                 .frame(width: 68, height: 78)

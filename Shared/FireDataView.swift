@@ -26,7 +26,7 @@ struct FireDataView: View {
             VStack(spacing: 24.0) {
                 
                 VStack(spacing: 8.0) {
-                    Image("location-pin")
+                    Image(.locationPin)
                         .renderingMode(.template)
                         .foregroundColor(forecastModel.tintColor())
                     Text(forecastModel.locationText())
@@ -53,14 +53,14 @@ struct FireBanView: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-            Image("flame")
+            Image(.flame)
                 .resizable()
                 .frame(width: 68, height: 78)
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(forecastModel.tintColor())
             
             if forecastModel.banIconVisible() {
-                Image("crossout")
+                Image(.crossout)
                     .resizable()
                     .frame(width: 141, height: 141)
                     .foregroundColor(forecastModel.tintColor())

@@ -16,7 +16,7 @@ struct UnsupportedLocationView: View {
             VStack(alignment: .center, spacing: 64) {
                 
                 ZStack(alignment: .center) {
-                    Image("warning")
+                    Image(.warning)
                         .resizable()
                         .frame(width: 72, height: 72)
                         .aspectRatio(contentMode: .fit)
@@ -44,7 +44,7 @@ struct UnsupportedLocationView: View {
             VStack(spacing: 24.0) {
                 
                 VStack(spacing: 8.0) {
-                    Image("location-pin")
+                    Image(.locationPin)
                         .renderingMode(.template)
                         .foregroundColor(Color("darkTint"))
                     Text("outside_coverage_area")
