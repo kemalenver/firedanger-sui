@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var manager = LocationObserver()
+    @StateObject private var manager = LocationObserver()
     
     var body: some View {
-        
+
         switch manager.appState {
         case .checkingLocation:
             FindingLocationView()
@@ -36,9 +36,10 @@ struct ContentView: View {
 
 struct MainView: View {
     
+    @ObservedObject var manager: LocationObserver
+
     @State private var tabSelection = 0
-    @StateObject var manager = LocationObserver()
-    
+
     var todayButtonTint: Color {
         return tabSelection == 0 ? manager.todayForecastModel!.tintColor() : manager.tomorrowForecastModel!.tintColor()
     }
