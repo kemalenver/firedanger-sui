@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FireDataView: View {
     
-    @State var forecastModel: NSWForecastModel
-    
+    var forecastModel: NSWForecastModel
+
     var body: some View {
         
         VStack {
@@ -49,7 +49,7 @@ struct FireDataView: View {
 
 struct FireBanView: View {
     
-    @State var forecastModel: NSWForecastModel
+    var forecastModel: NSWForecastModel
     
     var body: some View {
         ZStack(alignment: .center) {
@@ -71,9 +71,10 @@ struct FireBanView: View {
 
 struct FireBanDescriptionView: View {
     
-    @State var forecastModel: NSWForecastModel
-    @State private var isPresentWebView = false
+    var forecastModel: NSWForecastModel
     
+    @State private var isPresentWebView = false
+
     var body: some View {
         VStack(spacing: 8.0) {
             Text(forecastModel.fireBanText())
