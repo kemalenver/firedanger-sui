@@ -25,7 +25,7 @@ struct InformationView: View {
             
             HStack(alignment: .center, spacing: 0) {
                 VStack {
-                    Button("Danger Ratings") {
+                    Button("button_title_danger_ratings") {
                         tabSelection = 0
                     }
                     .frame(width: geometry.size.width / 2, height: 50)
@@ -39,7 +39,7 @@ struct InformationView: View {
                 }
                 
                 VStack {
-                    Button("Fire Ban Rules") {
+                    Button("button_title_fire_ban_rules") {
                         tabSelection = 1
                     }
                     .frame(width: geometry.size.width / 2, height: 50)
@@ -64,6 +64,4 @@ struct InformationView: View {
         .indexViewStyle(.page(backgroundDisplayMode: .interactive))
         .ignoresSafeArea()
     }
-    
 }
-

@@ -11,17 +11,13 @@ struct FireDataView: View {
     
     @State var forecastModel: NSWForecastModel
     
-    
     var body: some View {
         
         VStack {
-            
             Spacer()
             
             VStack(alignment: .center, spacing: 64) {
-                
                 FireBanView(forecastModel: forecastModel)
-                
                 FireBanDescriptionView(forecastModel: forecastModel)
             }
             
@@ -48,12 +44,6 @@ struct FireDataView: View {
             alignment: .center
         )
         .background(forecastModel.backgroundColor())
-    }
-}
-
-struct FireDataView_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("Test")
     }
 }
 

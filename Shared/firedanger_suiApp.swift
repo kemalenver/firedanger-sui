@@ -20,6 +20,5 @@ struct firedanger_suiApp: App {
         WindowGroup {
             ContentView()
         }
-        
     }
 }

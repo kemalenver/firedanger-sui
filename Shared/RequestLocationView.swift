@@ -12,20 +12,11 @@ struct RequestLocationView: View {
         VStack {
             Image("flame")
                 .resizable()
+                .foregroundColor(Color("loadingTint"))
                 .frame(width: 68, height: 78)
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(.white)
-                .background(Color.black)
             Spacer()
         }
-        .frame(
-              minWidth: 0,
-              maxWidth: .infinity,
-              minHeight: 0,
-              maxHeight: .infinity,
-              alignment: .topLeading
-            )
-        .background(Color.black)
     }
 }
 

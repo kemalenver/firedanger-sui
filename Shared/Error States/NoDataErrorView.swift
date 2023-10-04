@@ -22,12 +22,12 @@ struct NoDataErrorView: View {
                 }
                 
                 VStack(spacing: 8.0) {
-                    Text("Could not fetch RFS fire danger information")
+                    Text("rfs_data_not_found")
                         .font(.body)
                         .fontWeight(.medium)
                         .foregroundColor(Color("darkTint"))
                     HStack {
-                        Text("Please try again later")
+                        Text("no_data_try_again")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color("darkTint"))
@@ -49,7 +49,7 @@ struct NoDataErrorView: View {
                                 .resizable()
                                 .tint(Color("darkTint"))
                                 .frame(width: 24, height: 24)
-                            Text("Try again")
+                            Text("retry")
                                 .font(.callout)
                                 .foregroundColor(Color("darkTint"))
                         }

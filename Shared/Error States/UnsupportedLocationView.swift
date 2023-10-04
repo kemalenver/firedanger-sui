@@ -24,12 +24,12 @@ struct UnsupportedLocationView: View {
                 }
                 
                 VStack(spacing: 8.0) {
-                    Text("You're not in NSW")
+                    Text("location_unsupported_title")
                         .font(.body)
                         .fontWeight(.medium)
                         .foregroundColor(Color("darkTint"))
                     HStack {
-                        Text("Fire Danger only work inside NSW, Australia. Other states coming soon!")
+                        Text("location_unsupported_body")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color("darkTint"))
@@ -47,7 +47,7 @@ struct UnsupportedLocationView: View {
                     Image("location-pin")
                         .renderingMode(.template)
                         .foregroundColor(Color("darkTint"))
-                    Text("Outside Fire Danger Coverage Area")
+                    Text("outside_coverage_area")
                         .font(.callout)
                         .foregroundColor(Color("darkTint"))
                 }

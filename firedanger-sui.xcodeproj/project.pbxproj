@@ -51,6 +51,8 @@
 		CFAA5C7C2AAB23D10027189B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */; };
 		CFAA5C7E2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
 		CFAA5C7F2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
+		CFBAA5A32ACCE8CB0027924A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */; };
+		CFBAA5A42ACCE8CB0027924A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,7 @@
 		CFAA5C772AAAFF6D0027189B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
 		CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,7 @@
 				CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */,
 				CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */,
 				CF888FC5278019B9003CA93B /* Assets.xcassets */,
+				CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -347,6 +351,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = CF888FBD278019B8003CA93B;
 			packageReferences = (
@@ -372,6 +377,7 @@
 			files = (
 				CF888FEF278019B9003CA93B /* Assets.xcassets in Resources */,
 				CF88900427803AB1003CA93B /* regions.json in Resources */,
+				CFBAA5A32ACCE8CB0027924A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +387,7 @@
 			files = (
 				CF888FF0278019B9003CA93B /* Assets.xcassets in Resources */,
 				CF88900527803AB1003CA93B /* regions.json in Resources */,
+				CFBAA5A42ACCE8CB0027924A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +620,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +653,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

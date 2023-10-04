@@ -63,7 +63,7 @@ struct MainView: View {
                 
                 HStack(alignment: .center, spacing: 0) {
                     VStack {
-                        Button("Today") {
+                        Button("today") {
                             tabSelection = 0
                         }
                         .frame(width: geometry.size.width / 2, height: 50)
@@ -77,7 +77,7 @@ struct MainView: View {
                     }
                     
                     VStack {
-                        Button("Tomorrow") {
+                        Button("tomorrow") {
                             tabSelection = 1
                         }
                         .frame(width: geometry.size.width / 2, height: 50)

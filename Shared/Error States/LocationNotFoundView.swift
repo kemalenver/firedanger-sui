@@ -22,12 +22,12 @@ struct LocationNotFoundView: View {
                 }
                 
                 VStack(spacing: 8.0) {
-                    Text("Your location could not be found")
+                    Text("location_not_found_title")
                         .font(.body)
                         .fontWeight(.medium)
                         .foregroundColor(Color("darkTint"))
                     HStack {
-                        Text("Try to enable location services in settings so we can provide your forecast")
+                        Text("location_not_found_body")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color("darkTint"))
@@ -49,7 +49,7 @@ struct LocationNotFoundView: View {
                                 .resizable()
                                 .tint(Color("darkTint"))
                                 .frame(width: 24, height: 24)
-                            Text("Try again")
+                            Text("retry")
                                 .font(.callout)
                                 .foregroundColor(Color("darkTint"))
                         }
