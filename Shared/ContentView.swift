@@ -12,7 +12,7 @@ struct ContentView: View {
     @StateObject private var manager = LocationObserver()
     
     var body: some View {
-
+        
         switch manager.appState {
         case .checkingLocation:
             FindingLocationView()
@@ -37,9 +37,9 @@ struct ContentView: View {
 struct MainView: View {
     
     @ObservedObject var manager: LocationObserver
-
+    
     @State private var tabSelection = 0
-
+    
     var todayButtonTint: Color {
         return tabSelection == 0 ? manager.todayForecastModel!.tintColor() : manager.tomorrowForecastModel!.tintColor()
     }
@@ -64,12 +64,15 @@ struct MainView: View {
                 
                 HStack(alignment: .center, spacing: 0) {
                     VStack {
-                        Button("today") {
+                        Button {
                             tabSelection = 0
+                        } label: {
+                            Text("today")
+                                .frame(width: geometry.size.width / 2, height: 50)
+                                .background(Color.clear)
+                                .foregroundColor(todayButtonTint)
+                            
                         }
-                        .frame(width: geometry.size.width / 2, height: 50)
-                        .background(Color.clear)
-                        .foregroundColor(todayButtonTint)
                         
                         Rectangle()
                             .frame(height: 2)
@@ -78,12 +81,15 @@ struct MainView: View {
                     }
                     
                     VStack {
-                        Button("tomorrow") {
+                        Button {
                             tabSelection = 1
+                        } label: {
+                            Text("tomorrow")
+                                .frame(width: geometry.size.width / 2, height: 50)
+                                .background(Color.clear)
+                                .foregroundColor(todayButtonTint)
+                            
                         }
-                        .frame(width: geometry.size.width / 2, height: 50)
-                        .foregroundColor(tomorrowButtonTint)
-                        .background(Color.clear)
                         
                         Rectangle()
                             .frame(height: 2)

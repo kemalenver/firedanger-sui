@@ -68,7 +68,7 @@ class NSWForecastModel {
         if warningLevel == .level0 {
             return UIImage(resource: .timelapse)
         } else {
-            return UIImage(named: "fire1")
+            return UIImage(resource: .flame)
         }
     }
     

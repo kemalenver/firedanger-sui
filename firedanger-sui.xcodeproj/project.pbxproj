@@ -8,51 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		CF32981A28B5A88300021B83 /* FireDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32981928B5A88300021B83 /* FireDataView.swift */; };
-		CF32981B28B5A88300021B83 /* FireDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32981928B5A88300021B83 /* FireDataView.swift */; };
 		CF888FDC278019B9003CA93B /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FDB278019B9003CA93B /* Tests_iOS.swift */; };
 		CF888FDE278019B9003CA93B /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FDD278019B9003CA93B /* Tests_iOSLaunchTests.swift */; };
-		CF888FE8278019B9003CA93B /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FE7278019B9003CA93B /* Tests_macOS.swift */; };
-		CF888FEA278019B9003CA93B /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FE9278019B9003CA93B /* Tests_macOSLaunchTests.swift */; };
 		CF888FEB278019B9003CA93B /* firedanger_suiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */; };
-		CF888FEC278019B9003CA93B /* firedanger_suiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */; };
 		CF888FED278019B9003CA93B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FC4278019B9003CA93B /* ContentView.swift */; };
-		CF888FEE278019B9003CA93B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF888FC4278019B9003CA93B /* ContentView.swift */; };
 		CF888FEF278019B9003CA93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF888FC5278019B9003CA93B /* Assets.xcassets */; };
-		CF888FF0278019B9003CA93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF888FC5278019B9003CA93B /* Assets.xcassets */; };
 		CF88900427803AB1003CA93B /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888FFF27803AB1003CA93B /* regions.json */; };
-		CF88900527803AB1003CA93B /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888FFF27803AB1003CA93B /* regions.json */; };
 		CF88900627803AB1003CA93B /* FireDangerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900027803AB1003CA93B /* FireDangerMap.swift */; };
-		CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900027803AB1003CA93B /* FireDangerMap.swift */; };
 		CF88900C27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
-		CF88900D27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
 		CF8B7D062A936F300061C2A1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D052A936F300061C2A1 /* WebView.swift */; };
-		CF8B7D072A936F300061C2A1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D052A936F300061C2A1 /* WebView.swift */; };
 		CF8B7D092A9371EC0061C2A1 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D082A9371EC0061C2A1 /* InformationView.swift */; };
-		CF8B7D0A2A9371EC0061C2A1 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D082A9371EC0061C2A1 /* InformationView.swift */; };
 		CF8B7D0D2A9377900061C2A1 /* AdStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */; };
-		CF8B7D0E2A9377900061C2A1 /* AdStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */; };
 		CF8B7D112A93787D0061C2A1 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = CF8B7D102A93787D0061C2A1 /* GoogleMobileAds */; };
 		CF8B96FC29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
-		CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
 		CF8B9700296693E000C27E05 /* SwiftyXMLCoding in Frameworks */ = {isa = PBXBuildFile; productRef = CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */; };
 		CF8B97042966CD6900C27E05 /* NSWForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* NSWForecastModel.swift */; };
-		CF8B97052966CD6900C27E05 /* NSWForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* NSWForecastModel.swift */; };
 		CF8B9707296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
-		CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
 		CF8B970A296BB5A000C27E05 /* FindingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */; };
-		CF8B970B296BB5A000C27E05 /* FindingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */; };
 		CF8B970D296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */; };
-		CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */; };
 		CF8B9710296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
-		CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
 		CFAA5C782AAAFF6D0027189B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C772AAAFF6D0027189B /* Configuration.swift */; };
-		CFAA5C792AAAFF6D0027189B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C772AAAFF6D0027189B /* Configuration.swift */; };
 		CFAA5C7B2AAB23D10027189B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */; };
-		CFAA5C7C2AAB23D10027189B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */; };
 		CFAA5C7E2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
-		CFAA5C7F2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
 		CFBAA5A32ACCE8CB0027924A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */; };
-		CFBAA5A42ACCE8CB0027924A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +41,6 @@
 			remoteGlobalIDString = CF888FC9278019B9003CA93B;
 			remoteInfo = "firedanger-sui (iOS)";
 		};
-		CF888FE4278019B9003CA93B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CF888FBE278019B8003CA93B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF888FCF278019B9003CA93B;
-			remoteInfo = "firedanger-sui (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -79,14 +50,9 @@
 		CF888FC4278019B9003CA93B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF888FC5278019B9003CA93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF888FCA278019B9003CA93B /* Fire Danger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire Danger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF888FD0278019B9003CA93B /* firedanger-sui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firedanger-sui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF888FD2278019B9003CA93B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		CF888FD7278019B9003CA93B /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF888FDB278019B9003CA93B /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		CF888FDD278019B9003CA93B /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		CF888FE3278019B9003CA93B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF888FE7278019B9003CA93B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		CF888FE9278019B9003CA93B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		CF888FFF27803AB1003CA93B /* regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
 		CF88900027803AB1003CA93B /* FireDangerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireDangerMap.swift; sourceTree = "<group>"; };
 		CF88900127803AB1003CA93B /* NSWForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWForecastModel.swift; sourceTree = "<group>"; };
@@ -116,21 +82,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF888FCD278019B9003CA93B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CF888FD4278019B9003CA93B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF888FE0278019B9003CA93B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -146,9 +98,7 @@
 				CF52EB0B2A9379AA00302478 /* firedanger-sui--iOS--Info.plist */,
 				CF88900F27803B40003CA93B /* nsw_north_coast.gpx */,
 				CF888FC2278019B9003CA93B /* Shared */,
-				CF888FD1278019B9003CA93B /* macOS */,
 				CF888FDA278019B9003CA93B /* Tests iOS */,
-				CF888FE6278019B9003CA93B /* Tests macOS */,
 				CF888FCB278019B9003CA93B /* Products */,
 				CF8B7D0F2A93787D0061C2A1 /* Frameworks */,
 			);
@@ -179,19 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				CF888FCA278019B9003CA93B /* Fire Danger.app */,
-				CF888FD0278019B9003CA93B /* firedanger-sui.app */,
 				CF888FD7278019B9003CA93B /* Tests iOS.xctest */,
-				CF888FE3278019B9003CA93B /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CF888FD1278019B9003CA93B /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				CF888FD2278019B9003CA93B /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		CF888FDA278019B9003CA93B /* Tests iOS */ = {
@@ -201,15 +141,6 @@
 				CF888FDD278019B9003CA93B /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		CF888FE6278019B9003CA93B /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				CF888FE7278019B9003CA93B /* Tests_macOS.swift */,
-				CF888FE9278019B9003CA93B /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		CF8B7D0F2A93787D0061C2A1 /* Frameworks */ = {
@@ -265,23 +196,6 @@
 			productReference = CF888FCA278019B9003CA93B /* Fire Danger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CF888FCF278019B9003CA93B /* firedanger-sui (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF888FF6278019B9003CA93B /* Build configuration list for PBXNativeTarget "firedanger-sui (macOS)" */;
-			buildPhases = (
-				CF888FCC278019B9003CA93B /* Sources */,
-				CF888FCD278019B9003CA93B /* Frameworks */,
-				CF888FCE278019B9003CA93B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "firedanger-sui (macOS)";
-			productName = "firedanger-sui (macOS)";
-			productReference = CF888FD0278019B9003CA93B /* firedanger-sui.app */;
-			productType = "com.apple.product-type.application";
-		};
 		CF888FD6278019B9003CA93B /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF888FF9278019B9003CA93B /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -300,24 +214,6 @@
 			productReference = CF888FD7278019B9003CA93B /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		CF888FE2278019B9003CA93B /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF888FFC278019B9003CA93B /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				CF888FDF278019B9003CA93B /* Sources */,
-				CF888FE0278019B9003CA93B /* Frameworks */,
-				CF888FE1278019B9003CA93B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CF888FE5278019B9003CA93B /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = CF888FE3278019B9003CA93B /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,16 +227,9 @@
 					CF888FC9278019B9003CA93B = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					CF888FCF278019B9003CA93B = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
 					CF888FD6278019B9003CA93B = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = CF888FC9278019B9003CA93B;
-					};
-					CF888FE2278019B9003CA93B = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = CF888FCF278019B9003CA93B;
 					};
 				};
 			};
@@ -363,9 +252,7 @@
 			projectRoot = "";
 			targets = (
 				CF888FC9278019B9003CA93B /* firedanger-sui (iOS) */,
-				CF888FCF278019B9003CA93B /* firedanger-sui (macOS) */,
 				CF888FD6278019B9003CA93B /* Tests iOS */,
-				CF888FE2278019B9003CA93B /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -381,24 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF888FCE278019B9003CA93B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF888FF0278019B9003CA93B /* Assets.xcassets in Resources */,
-				CF88900527803AB1003CA93B /* regions.json in Resources */,
-				CFBAA5A42ACCE8CB0027924A /* Localizable.xcstrings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CF888FD5278019B9003CA93B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF888FE1278019B9003CA93B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,45 +302,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF888FCC278019B9003CA93B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFAA5C7C2AAB23D10027189B /* LocationDeniedView.swift in Sources */,
-				CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */,
-				CF8B7D0E2A9377900061C2A1 /* AdStuff.swift in Sources */,
-				CF32981B28B5A88300021B83 /* FireDataView.swift in Sources */,
-				CF8B97052966CD6900C27E05 /* NSWForecastModel.swift in Sources */,
-				CF88900D27803AB1003CA93B /* Properties.swift in Sources */,
-				CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */,
-				CFAA5C792AAAFF6D0027189B /* Configuration.swift in Sources */,
-				CF8B970B296BB5A000C27E05 /* FindingLocationView.swift in Sources */,
-				CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */,
-				CF888FEE278019B9003CA93B /* ContentView.swift in Sources */,
-				CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */,
-				CF8B7D072A936F300061C2A1 /* WebView.swift in Sources */,
-				CF8B7D0A2A9371EC0061C2A1 /* InformationView.swift in Sources */,
-				CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */,
-				CF888FEC278019B9003CA93B /* firedanger_suiApp.swift in Sources */,
-				CFAA5C7F2AAB23F80027189B /* RequestLocationView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CF888FD3278019B9003CA93B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF888FDE278019B9003CA93B /* Tests_iOSLaunchTests.swift in Sources */,
 				CF888FDC278019B9003CA93B /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF888FDF278019B9003CA93B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF888FEA278019B9003CA93B /* Tests_macOSLaunchTests.swift in Sources */,
-				CF888FE8278019B9003CA93B /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,11 +318,6 @@
 			isa = PBXTargetDependency;
 			target = CF888FC9278019B9003CA93B /* firedanger-sui (iOS) */;
 			targetProxy = CF888FD8278019B9003CA93B /* PBXContainerItemProxy */;
-		};
-		CF888FE5278019B9003CA93B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CF888FCF278019B9003CA93B /* firedanger-sui (macOS) */;
-			targetProxy = CF888FE4278019B9003CA93B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -670,66 +502,6 @@
 			};
 			name = Release;
 		};
-		CF888FF7278019B9003CA93B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PDT9S226TJ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
-				PRODUCT_NAME = "firedanger-sui";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		CF888FF8278019B9003CA93B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PDT9S226TJ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
-				PRODUCT_NAME = "firedanger-sui";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		CF888FFA278019B9003CA93B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -771,46 +543,6 @@
 			};
 			name = Release;
 		};
-		CF888FFD278019B9003CA93B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PDT9S226TJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "firedanger-sui (macOS)";
-			};
-			name = Debug;
-		};
-		CF888FFE278019B9003CA93B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PDT9S226TJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "firedanger-sui (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -832,29 +564,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF888FF6278019B9003CA93B /* Build configuration list for PBXNativeTarget "firedanger-sui (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF888FF7278019B9003CA93B /* Debug */,
-				CF888FF8278019B9003CA93B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CF888FF9278019B9003CA93B /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF888FFA278019B9003CA93B /* Debug */,
 				CF888FFB278019B9003CA93B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF888FFC278019B9003CA93B /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF888FFD278019B9003CA93B /* Debug */,
-				CF888FFE278019B9003CA93B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

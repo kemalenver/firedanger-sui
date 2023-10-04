@@ -55,10 +55,6 @@ struct NoDataErrorView: View {
                         }
                     }
                 }
-                
-                Rectangle()
-                    .frame(height: 50.0)
-                    .foregroundColor(.green)
             }.padding(.bottom, 16)
         }
         .frame(
