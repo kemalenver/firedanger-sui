@@ -64,3 +64,9 @@ struct UnsupportedLocationView: View {
         .background(Color("lightTint"))
     }
 }
+
+struct UnsupportedLocationView_Previews: PreviewProvider {
+    static var previews: some View {
+        UnsupportedLocationView()
+    }
+}

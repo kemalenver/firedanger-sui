@@ -25,7 +25,6 @@ struct InformationView: View {
             
             HStack(alignment: .center, spacing: 0) {
                 VStack {
-                    
                     Button {
                         tabSelection = 0
                     } label: {
@@ -49,7 +48,7 @@ struct InformationView: View {
                         Text("button_title_fire_ban_rules")
                             .frame(width: geometry.size.width / 2, height: 50)
                             .background(Color.clear)
-                            .foregroundColor(Color("darkTint"))
+                            .foregroundColor(Color(("darkTint")))
                     }
                     
                     Rectangle()
@@ -69,5 +68,11 @@ struct InformationView: View {
         .tabViewStyle(.page)
         .indexViewStyle(.page(backgroundDisplayMode: .interactive))
         .ignoresSafeArea()
+    }
+}
+
+struct InformationView_Previews: PreviewProvider {
+    static var previews: some View {
+        InformationView()
     }
 }
