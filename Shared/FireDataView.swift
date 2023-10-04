@@ -9,47 +9,20 @@ import SwiftUI
 
 struct FireDataView: View {
     
-    @State var forecastModel: ForecastModel
+    @State var forecastModel: NSWForecastModel
+    
     
     var body: some View {
         
         VStack {
+            
             Spacer()
+            
             VStack(alignment: .center, spacing: 64) {
                 
-                ZStack(alignment: .center) {
-                    Image("flame")
-                        .resizable()
-                        .frame(width: 68, height: 78)
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(forecastModel.tintColor())
-                    
-                    if forecastModel.banIconVisible() {
-                        Image("crossout")
-                            .resizable()
-                            .frame(width: 141, height: 141)
-                            .foregroundColor(forecastModel.tintColor())
-                    }
-                }
+                FireBanView(forecastModel: forecastModel)
                 
-                VStack(spacing: 8.0) {
-                    Text(forecastModel.fireBanText())
-                        .font(.body)
-                        .fontWeight(.medium)
-                        .foregroundColor(forecastModel.tintColor())
-                    HStack {
-                        Text(forecastModel.fireDangerText())
-                            .font(.body)
-                            .fontWeight(.regular)
-                            .foregroundColor(forecastModel.tintColor())
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "info.circle.fill")
-                                .tint(forecastModel.tintColor())
-                        }
-                    }
-                }
+                FireBanDescriptionView(forecastModel: forecastModel)
             }
             
             Spacer()
@@ -65,10 +38,9 @@ struct FireDataView: View {
                         .foregroundColor(forecastModel.tintColor())
                 }
                 
-                Rectangle()
-                    .frame(height: 50.0)
-                    .foregroundColor(.orange)               
-            }.padding(.bottom, 16)
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
+            }
+            .padding(.bottom, 16)
         }
         .frame(
             maxWidth: .infinity,
@@ -79,8 +51,63 @@ struct FireDataView: View {
     }
 }
 
-//struct FireDataView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FireDataView(manager: self.mana )
-//    }
-//}
+struct FireDataView_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Test")
+    }
+}
+
+struct FireBanView: View {
+    
+    @State var forecastModel: NSWForecastModel
+    
+    var body: some View {
+        ZStack(alignment: .center) {
+            Image("flame")
+                .resizable()
+                .frame(width: 68, height: 78)
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(forecastModel.tintColor())
+            
+            if forecastModel.banIconVisible() {
+                Image("crossout")
+                    .resizable()
+                    .frame(width: 141, height: 141)
+                    .foregroundColor(forecastModel.tintColor())
+            }
+        }
+    }
+}
+
+struct FireBanDescriptionView: View {
+    
+    @State var forecastModel: NSWForecastModel
+    @State private var isPresentWebView = false
+    
+    var body: some View {
+        VStack(spacing: 8.0) {
+            Text(forecastModel.fireBanText())
+                .font(.body)
+                .fontWeight(.medium)
+                .foregroundColor(forecastModel.tintColor())
+            HStack {
+                Text(forecastModel.fireDangerText())
+                    .font(.body)
+                    .fontWeight(.regular)
+                    .foregroundColor(forecastModel.tintColor())
+                Button {
+                    isPresentWebView = true
+                } label: {
+                    Image(systemName: "info.circle.fill")
+                        .tint(forecastModel.tintColor())
+                }
+                .sheet(isPresented: $isPresentWebView) {
+                    
+                    InformationView()
+                    
+                    
+                }
+            }
+        }
+    }
+}

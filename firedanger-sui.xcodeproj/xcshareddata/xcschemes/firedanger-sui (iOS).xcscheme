@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF888FC9278019B9003CA93B"
-               BuildableName = "firedanger-sui.app"
+               BuildableName = "Fire Danger.app"
                BlueprintName = "firedanger-sui (iOS)"
                ReferencedContainer = "container:firedanger-sui.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF888FC9278019B9003CA93B"
-            BuildableName = "firedanger-sui.app"
+            BuildableName = "Fire Danger.app"
             BlueprintName = "firedanger-sui (iOS)"
             ReferencedContainer = "container:firedanger-sui.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF888FC9278019B9003CA93B"
-            BuildableName = "firedanger-sui.app"
+            BuildableName = "Fire Danger.app"
             BlueprintName = "firedanger-sui (iOS)"
             ReferencedContainer = "container:firedanger-sui.xcodeproj">
          </BuildableReference>

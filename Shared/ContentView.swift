@@ -18,6 +18,10 @@ struct ContentView: View {
             FindingLocationView()
         case .userLocationNotFound:
             LocationNotFoundView()
+        case .locationPermissionDenied:
+            LocationDeniedView()
+        case .requestingLocationPermission:
+            RequestLocationView()
         case .fetchingFireDangerData:
             FindingLocationView()
         case .ready:

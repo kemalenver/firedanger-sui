@@ -15,16 +15,15 @@ enum Day {
     case tomorrow
 }
 
-enum WarningLevel: String {
-    case level0 = "None"
-    case level1 = "NO RATING"
-    case level2 = "MODERATE"
-    case level3 = "HIGH"
-    case level4 = "EXTREME"
-    case level5 = "CATASTROPHIC"
-}
-
-class ForecastModel {
+class NSWForecastModel {
+    
+    enum WarningLevel: String {
+        case level0 = "NONE"
+        case level1 = "MODERATE"
+        case level2 = "HIGH"
+        case level3 = "EXTREME"
+        case level4 = "CATASTROPHIC"
+    }
     
     private var warningLevel: WarningLevel {
         
@@ -46,13 +45,6 @@ class ForecastModel {
     private let day: Day
     
     init(locationProperties: Properties, district: District, day: Day) {
-        
-        var district = district
-        district.DangerLevelToday = "HIGH"
-        district.FireBanToday = "no"
-        district.DangerLevelTomorrow = "CATASTROPHIC"
-        district.FireBanTomorrow = "yes"
-        
         self.locationProperties = locationProperties
         self.district = district
         self.day = day
@@ -69,7 +61,6 @@ class ForecastModel {
         case .level2: return Color("level2")
         case .level3: return Color("level3")
         case .level4: return Color("level4")
-        case .level5: return Color("level5")
         }
     }
     
@@ -87,7 +78,7 @@ class ForecastModel {
             return Color("loadingTint")
         }
         
-        return [WarningLevel.level2, WarningLevel.level5].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
+        return [WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
     }
     
     func banIconVisible() -> Bool {

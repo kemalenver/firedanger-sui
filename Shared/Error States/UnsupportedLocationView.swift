@@ -29,13 +29,14 @@ struct UnsupportedLocationView: View {
                         .fontWeight(.medium)
                         .foregroundColor(Color("darkTint"))
                     HStack {
-                        Text("Fire Danger ratings only works inside NSW, Australia")
+                        Text("Fire Danger only work inside NSW, Australia. Other states coming soon!")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color("darkTint"))
                             .multilineTextAlignment(.center)
                     }
                 }
+                .padding(.horizontal, 16)
             }
             
             Spacer()
@@ -51,10 +52,9 @@ struct UnsupportedLocationView: View {
                         .foregroundColor(Color("darkTint"))
                 }
                 
-                Rectangle()
-                    .frame(height: 50.0)
-                    .foregroundColor(.orange)
-            }.padding(.bottom, 16)
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
+            }
+            .padding([.bottom], 16)
         }
         .frame(
             maxWidth: .infinity,

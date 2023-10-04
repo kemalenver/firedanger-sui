@@ -16,6 +16,8 @@ enum FindRegionError: Error {
 
 enum AppState {
     case fetchingFireDangerData
+    case requestingLocationPermission
+    case locationPermissionDenied
     case checkingLocation
     case userLocationNotFound
     case regionNotSupported
@@ -48,8 +50,8 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
         }
     }
     
-    var todayForecastModel: ForecastModel?
-    var tomorrowForecastModel: ForecastModel?
+    var todayForecastModel: NSWForecastModel?
+    var tomorrowForecastModel: NSWForecastModel?
     
     override init() {
         super.init()
@@ -62,6 +64,8 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        self.appState = .checkingLocation
+        
         guard let location = locations.last else {
             return
         }
@@ -73,15 +77,21 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
         if (manager.authorizationStatus == .authorizedWhenInUse) || (manager.authorizationStatus == .authorizedAlways) {
             appState = .checkingLocation
             manager.requestLocation()
-        } else {
-            appState = .userLocationNotFound
+        } else if manager.authorizationStatus == .notDetermined {
+            appState = .requestingLocationPermission
             manager.requestWhenInUseAuthorization()
-        }
+        } else if manager.authorizationStatus == .denied {
+            appState = .locationPermissionDenied
+        } 
+//        else {
+//            appState = .userLocationNotFound
+//            manager.requestWhenInUseAuthorization()
+//        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Location failed: \((error as NSError).description)")
-        appState = .userLocationNotFound
+//        appState = .userLocationNotFound
     }
 }
 
@@ -130,8 +140,13 @@ extension LocationObserver {
         
         selectedRegion = "\(self.lastLocation.coordinate)"
         
+        guard self.fireBanInfo != nil else {
+            self.appState = .fetchingFireDangerData
+            return
+        }
+        
         guard let properties = try? self.findRegion() else {
-            self.selectedRegion = "Not supported region"
+            self.selectedRegion = "Unsupported region"
             return
         }
         
@@ -140,16 +155,16 @@ extension LocationObserver {
         }
         
         guard let district = matchingDistrict?.first else {
-            self.selectedRegion = "Not supported region"
+            self.selectedRegion = "Unupported region"
             self.appState = .regionNotSupported
             return
         }
         
         self.selectedRegion = district.Name
         
-        self.todayForecastModel = ForecastModel(locationProperties: properties, district: district, day: .today)
+        self.todayForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .today)
         
-        self.tomorrowForecastModel = ForecastModel(locationProperties: properties, district: district, day: .tomorrow)
+        self.tomorrowForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .tomorrow)
     }
     
     private func findRegion() throws -> Properties {

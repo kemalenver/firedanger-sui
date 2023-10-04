@@ -58,7 +58,7 @@ struct NoDataErrorView: View {
                 
                 Rectangle()
                     .frame(height: 50.0)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.green)
             }.padding(.bottom, 16)
         }
         .frame(

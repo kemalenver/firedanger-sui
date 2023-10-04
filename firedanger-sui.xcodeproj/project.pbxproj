@@ -25,11 +25,18 @@
 		CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900027803AB1003CA93B /* FireDangerMap.swift */; };
 		CF88900C27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
 		CF88900D27803AB1003CA93B /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900327803AB1003CA93B /* Properties.swift */; };
+		CF8B7D062A936F300061C2A1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D052A936F300061C2A1 /* WebView.swift */; };
+		CF8B7D072A936F300061C2A1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D052A936F300061C2A1 /* WebView.swift */; };
+		CF8B7D092A9371EC0061C2A1 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D082A9371EC0061C2A1 /* InformationView.swift */; };
+		CF8B7D0A2A9371EC0061C2A1 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D082A9371EC0061C2A1 /* InformationView.swift */; };
+		CF8B7D0D2A9377900061C2A1 /* AdStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */; };
+		CF8B7D0E2A9377900061C2A1 /* AdStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */; };
+		CF8B7D112A93787D0061C2A1 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = CF8B7D102A93787D0061C2A1 /* GoogleMobileAds */; };
 		CF8B96FC29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
 		CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B96FB29668CE600C27E05 /* LocationObserver.swift */; };
 		CF8B9700296693E000C27E05 /* SwiftyXMLCoding in Frameworks */ = {isa = PBXBuildFile; productRef = CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */; };
-		CF8B97042966CD6900C27E05 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* ForecastModel.swift */; };
-		CF8B97052966CD6900C27E05 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* ForecastModel.swift */; };
+		CF8B97042966CD6900C27E05 /* NSWForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* NSWForecastModel.swift */; };
+		CF8B97052966CD6900C27E05 /* NSWForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88900127803AB1003CA93B /* NSWForecastModel.swift */; };
 		CF8B9707296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
 		CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */; };
 		CF8B970A296BB5A000C27E05 /* FindingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */; };
@@ -38,6 +45,12 @@
 		CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */; };
 		CF8B9710296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
 		CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */; };
+		CFAA5C782AAAFF6D0027189B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C772AAAFF6D0027189B /* Configuration.swift */; };
+		CFAA5C792AAAFF6D0027189B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C772AAAFF6D0027189B /* Configuration.swift */; };
+		CFAA5C7B2AAB23D10027189B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */; };
+		CFAA5C7C2AAB23D10027189B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */; };
+		CFAA5C7E2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
+		CFAA5C7F2AAB23F80027189B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +72,11 @@
 
 /* Begin PBXFileReference section */
 		CF32981928B5A88300021B83 /* FireDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDataView.swift; sourceTree = "<group>"; };
+		CF52EB0B2A9379AA00302478 /* firedanger-sui--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "firedanger-sui--iOS--Info.plist"; sourceTree = "<group>"; };
 		CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firedanger_suiApp.swift; sourceTree = "<group>"; };
 		CF888FC4278019B9003CA93B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF888FC5278019B9003CA93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF888FCA278019B9003CA93B /* firedanger-sui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firedanger-sui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF888FCA278019B9003CA93B /* Fire Danger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire Danger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF888FD0278019B9003CA93B /* firedanger-sui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firedanger-sui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF888FD2278019B9003CA93B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		CF888FD7278019B9003CA93B /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,14 +87,20 @@
 		CF888FE9278019B9003CA93B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		CF888FFF27803AB1003CA93B /* regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
 		CF88900027803AB1003CA93B /* FireDangerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireDangerMap.swift; sourceTree = "<group>"; };
-		CF88900127803AB1003CA93B /* ForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		CF88900127803AB1003CA93B /* NSWForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWForecastModel.swift; sourceTree = "<group>"; };
 		CF88900327803AB1003CA93B /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
-		CF88900F27803B40003CA93B /* nsw_test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = nsw_test.gpx; path = Shared/nsw_test.gpx; sourceTree = "<group>"; };
+		CF88900F27803B40003CA93B /* nsw_north_coast.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = nsw_north_coast.gpx; path = Shared/nsw_north_coast.gpx; sourceTree = "<group>"; };
+		CF8B7D052A936F300061C2A1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CF8B7D082A9371EC0061C2A1 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStuff.swift; sourceTree = "<group>"; };
 		CF8B96FB29668CE600C27E05 /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsupportedLocationView.swift; sourceTree = "<group>"; };
 		CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingLocationView.swift; sourceTree = "<group>"; };
 		CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotFoundView.swift; sourceTree = "<group>"; };
 		CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataErrorView.swift; sourceTree = "<group>"; };
+		CFAA5C772AAAFF6D0027189B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8B7D112A93787D0061C2A1 /* GoogleMobileAds in Frameworks */,
 				CF8B9700296693E000C27E05 /* SwiftyXMLCoding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,12 +140,14 @@
 		CF888FBD278019B8003CA93B = {
 			isa = PBXGroup;
 			children = (
-				CF88900F27803B40003CA93B /* nsw_test.gpx */,
+				CF52EB0B2A9379AA00302478 /* firedanger-sui--iOS--Info.plist */,
+				CF88900F27803B40003CA93B /* nsw_north_coast.gpx */,
 				CF888FC2278019B9003CA93B /* Shared */,
 				CF888FD1278019B9003CA93B /* macOS */,
 				CF888FDA278019B9003CA93B /* Tests iOS */,
 				CF888FE6278019B9003CA93B /* Tests macOS */,
 				CF888FCB278019B9003CA93B /* Products */,
+				CF8B7D0F2A93787D0061C2A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +157,15 @@
 				CF8B9713296BC63900C27E05 /* Data */,
 				CF8B9712296BC5ED00C27E05 /* Error States */,
 				CF888FC3278019B9003CA93B /* firedanger_suiApp.swift */,
+				CFAA5C772AAAFF6D0027189B /* Configuration.swift */,
 				CF888FC4278019B9003CA93B /* ContentView.swift */,
+				CF8B7D052A936F300061C2A1 /* WebView.swift */,
+				CF8B7D082A9371EC0061C2A1 /* InformationView.swift */,
 				CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */,
 				CF32981928B5A88300021B83 /* FireDataView.swift */,
+				CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */,
+				CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */,
+				CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */,
 				CF888FC5278019B9003CA93B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -145,7 +174,7 @@
 		CF888FCB278019B9003CA93B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF888FCA278019B9003CA93B /* firedanger-sui.app */,
+				CF888FCA278019B9003CA93B /* Fire Danger.app */,
 				CF888FD0278019B9003CA93B /* firedanger-sui.app */,
 				CF888FD7278019B9003CA93B /* Tests iOS.xctest */,
 				CF888FE3278019B9003CA93B /* Tests macOS.xctest */,
@@ -179,6 +208,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		CF8B7D0F2A93787D0061C2A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF8B9712296BC5ED00C27E05 /* Error States */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +228,7 @@
 		CF8B9713296BC63900C27E05 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				CF88900127803AB1003CA93B /* ForecastModel.swift */,
+				CF88900127803AB1003CA93B /* NSWForecastModel.swift */,
 				CF8B96FB29668CE600C27E05 /* LocationObserver.swift */,
 				CF88900027803AB1003CA93B /* FireDangerMap.swift */,
 				CF88900327803AB1003CA93B /* Properties.swift */,
@@ -219,9 +255,10 @@
 			name = "firedanger-sui (iOS)";
 			packageProductDependencies = (
 				CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */,
+				CF8B7D102A93787D0061C2A1 /* GoogleMobileAds */,
 			);
 			productName = "firedanger-sui (iOS)";
-			productReference = CF888FCA278019B9003CA93B /* firedanger-sui.app */;
+			productReference = CF888FCA278019B9003CA93B /* Fire Danger.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CF888FCF278019B9003CA93B /* firedanger-sui (macOS) */ = {
@@ -314,6 +351,7 @@
 			mainGroup = CF888FBD278019B8003CA93B;
 			packageReferences = (
 				CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */,
+				CF8B7D0B2A9377850061C2A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = CF888FCB278019B9003CA93B /* Products */;
 			projectDirPath = "";
@@ -367,17 +405,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAA5C7B2AAB23D10027189B /* LocationDeniedView.swift in Sources */,
 				CF8B970D296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */,
+				CF8B7D0D2A9377900061C2A1 /* AdStuff.swift in Sources */,
 				CF32981A28B5A88300021B83 /* FireDataView.swift in Sources */,
-				CF8B97042966CD6900C27E05 /* ForecastModel.swift in Sources */,
+				CF8B97042966CD6900C27E05 /* NSWForecastModel.swift in Sources */,
 				CF88900C27803AB1003CA93B /* Properties.swift in Sources */,
 				CF8B9710296BB60700C27E05 /* NoDataErrorView.swift in Sources */,
+				CFAA5C782AAAFF6D0027189B /* Configuration.swift in Sources */,
 				CF8B970A296BB5A000C27E05 /* FindingLocationView.swift in Sources */,
 				CF8B96FC29668CE600C27E05 /* LocationObserver.swift in Sources */,
 				CF888FED278019B9003CA93B /* ContentView.swift in Sources */,
 				CF8B9707296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */,
+				CF8B7D062A936F300061C2A1 /* WebView.swift in Sources */,
+				CF8B7D092A9371EC0061C2A1 /* InformationView.swift in Sources */,
 				CF88900627803AB1003CA93B /* FireDangerMap.swift in Sources */,
 				CF888FEB278019B9003CA93B /* firedanger_suiApp.swift in Sources */,
+				CFAA5C7E2AAB23F80027189B /* RequestLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,17 +429,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAA5C7C2AAB23D10027189B /* LocationDeniedView.swift in Sources */,
 				CF8B970E296BB5BF00C27E05 /* LocationNotFoundView.swift in Sources */,
+				CF8B7D0E2A9377900061C2A1 /* AdStuff.swift in Sources */,
 				CF32981B28B5A88300021B83 /* FireDataView.swift in Sources */,
-				CF8B97052966CD6900C27E05 /* ForecastModel.swift in Sources */,
+				CF8B97052966CD6900C27E05 /* NSWForecastModel.swift in Sources */,
 				CF88900D27803AB1003CA93B /* Properties.swift in Sources */,
 				CF8B9711296BB60700C27E05 /* NoDataErrorView.swift in Sources */,
+				CFAA5C792AAAFF6D0027189B /* Configuration.swift in Sources */,
 				CF8B970B296BB5A000C27E05 /* FindingLocationView.swift in Sources */,
 				CF8B96FD29668CE600C27E05 /* LocationObserver.swift in Sources */,
 				CF888FEE278019B9003CA93B /* ContentView.swift in Sources */,
 				CF8B9708296B98E700C27E05 /* UnsupportedLocationView.swift in Sources */,
+				CF8B7D072A936F300061C2A1 /* WebView.swift in Sources */,
+				CF8B7D0A2A9371EC0061C2A1 /* InformationView.swift in Sources */,
 				CF88900727803AB1003CA93B /* FireDangerMap.swift in Sources */,
 				CF888FEC278019B9003CA93B /* firedanger_suiApp.swift in Sources */,
+				CFAA5C7F2AAB23F80027189B /* RequestLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +606,7 @@
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "firedanger-sui--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the fire danger where you are";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -568,8 +619,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
-				PRODUCT_NAME = "firedanger-sui";
+				PRODUCT_NAME = "Fire Danger";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -587,6 +639,7 @@
 				DEVELOPMENT_TEAM = PDT9S226TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "firedanger-sui--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the fire danger where you are";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -599,8 +652,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
-				PRODUCT_NAME = "firedanger-sui";
+				PRODUCT_NAME = "Fire Danger";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -801,6 +855,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CF8B7D0B2A9377850061C2A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.9.0;
+			};
+		};
 		CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GottaGetSwifty/SwiftyXMLKit.git";
@@ -812,6 +874,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CF8B7D102A93787D0061C2A1 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF8B7D0B2A9377850061C2A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		CF8B96FF296693E000C27E05 /* SwiftyXMLCoding */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CF8B96FE296693E000C27E05 /* XCRemoteSwiftPackageReference "SwiftyXMLKit" */;

@@ -37,9 +37,8 @@ struct FindingLocationView: View {
                         .foregroundColor(Color("loadingTint"))
                 }
                 
-                Rectangle()
-                    .frame(height: 50.0)
-                    .foregroundColor(.orange)
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
+                
             }.padding(.bottom, 16)
         }
         .frame(

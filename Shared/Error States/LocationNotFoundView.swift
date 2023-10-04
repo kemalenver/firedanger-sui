@@ -58,7 +58,7 @@ struct LocationNotFoundView: View {
                 
                 Rectangle()
                     .frame(height: 50.0)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.red)
             }.padding(.bottom, 16)
         }
         .frame(
