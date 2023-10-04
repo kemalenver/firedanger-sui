@@ -11,34 +11,47 @@ struct LocationDeniedView: View {
     @Environment(\.openURL) var openURL
     
     var body: some View {
-        VStack(spacing: 16) {
+        VStack {
             Spacer()
-            Image(.flame)
-                .resizable()
-                .foregroundColor(Color("loadingTint"))
-                .frame(width: 68, height: 78)
-                .aspectRatio(contentMode: .fit)
-            
-            VStack(spacing: 16) {
-                Text("location_denied_previously_title")
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-                    .font(.title3)
+            VStack(alignment: .center, spacing: 64) {
                 
-                    .foregroundColor(Color("darkTint"))
+                ZStack(alignment: .center) {
+                    Image(.warning)
+                        .resizable()
+                        .frame(width: 72, height: 72)
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color("darkTint"))
+                }
                 
-                Text("location_denied_previously")
-                    .multilineTextAlignment(.center)
-                    .font(.body)
-                    .foregroundColor(Color("darkTint"))
-            }.padding(8)
-            
-            Button(action: openSettings) {
-                Label("open_settings", systemImage: "gear").font(.title3).foregroundColor(Color("darkTint"))
-            }.tint(Color("darkTint"))
+                VStack(spacing: 8.0) {
+                    Text("location_denied_previously_title")
+                        .font(.body)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color("darkTint"))
+                    HStack {
+                        Text("location_denied_previously")
+                            .font(.body)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color("darkTint"))
+                            .multilineTextAlignment(.center)
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
             
             Spacer()
-        }.frame(
+            
+            VStack(spacing: 24.0) {
+                
+                Button(action: openSettings) {
+                    Label("open_settings", systemImage: "gear").font(.body).foregroundColor(Color("darkTint"))
+                }.tint(Color("darkTint"))
+                
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
+            }
+            .padding([.bottom], 16)
+        }
+        .frame(
             maxWidth: .infinity,
             maxHeight: .infinity,
             alignment: .center
