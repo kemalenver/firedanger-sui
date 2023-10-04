@@ -138,33 +138,33 @@ extension LocationObserver {
     
     private func regionChanged() {
         
-        selectedRegion = "\(self.lastLocation.coordinate)"
+        selectedRegion = "\(lastLocation.coordinate)"
         
-        guard self.fireBanInfo != nil else {
-            self.appState = .fetchingFireDangerData
+        guard let fireBanInfo else {
+            appState = .fetchingFireDangerData
             return
         }
-        
-        guard let properties = try? self.findRegion() else {
-            self.selectedRegion = "Unsupported region"
-            return
+
+        do {
+            let properties = try findRegion()
+
+            let matchingDistrict = fireBanInfo.District.filter { (district) -> Bool in
+                return Int(district.RegionNumber.trimmingCharacters(in: .whitespacesAndNewlines)) == properties.DIST_NO
+            }
+
+            guard let district = matchingDistrict.first else {
+                throw FindRegionError.notFound
+            }
+
+            todayForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .today)
+            tomorrowForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .tomorrow)
+
+            selectedRegion = district.Name
+            appState = .ready
+        } catch {
+            selectedRegion = "Unsupported region"
+            appState = .regionNotSupported
         }
-        
-        let matchingDistrict = self.fireBanInfo?.District.filter { (district) -> Bool in
-            return Int(district.RegionNumber.trimmingCharacters(in: .whitespacesAndNewlines)) == properties.DIST_NO
-        }
-        
-        guard let district = matchingDistrict?.first else {
-            self.selectedRegion = "Unupported region"
-            self.appState = .regionNotSupported
-            return
-        }
-        
-        self.selectedRegion = district.Name
-        
-        self.todayForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .today)
-        
-        self.tomorrowForecastModel = NSWForecastModel(locationProperties: properties, district: district, day: .tomorrow)
     }
     
     private func findRegion() throws -> Properties {
@@ -192,12 +192,10 @@ extension LocationObserver {
             
             let polygonViewPoint: CGPoint = renderer.point(for: mapPoint)
             if renderer.path.contains(polygonViewPoint) {
-                appState = .ready
                 return properties
             }
         }
-        
-        appState = .regionNotSupported
+
         throw FindRegionError.notFound
     }
 }
