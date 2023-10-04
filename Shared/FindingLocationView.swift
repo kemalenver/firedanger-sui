@@ -15,7 +15,7 @@ struct FindingLocationView: View {
             Spacer()
             VStack(alignment: .center, spacing: 64) {
                 ZStack(alignment: .center) {
-                    Image("flame")
+                    Image(.flame)
                         .resizable()
                         .frame(width: 68, height: 78)
                         .aspectRatio(contentMode: .fit)
@@ -27,7 +27,7 @@ struct FindingLocationView: View {
             
             VStack(spacing: 24.0) {
                 VStack(spacing: 8.0) {
-                    Image("location-pin")
+                    Image(.locationPin)
                         .renderingMode(.template)
                         .foregroundColor(Color("loadingTint"))
                     Text("fetching_location")

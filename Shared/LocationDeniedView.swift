@@ -12,7 +12,7 @@ struct LocationDeniedView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            Image("flame")
+            Image(.flame)
                 .resizable()
                 .foregroundColor(Color("loadingTint"))
                 .frame(width: 68, height: 78)
