@@ -59,7 +59,7 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         
         loadRegionData()
-        loadDangerData()
+        Task { await loadDangerData() }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -119,18 +119,15 @@ extension LocationObserver {
         return try? JSONDecoder().decode(Properties.self, from: data)
     }
     
-    private func loadDangerData() {
-        URLSession.shared.dataTask(with: LocationObserver.fireDangerURL, completionHandler: { (data, response, error) in
-            DispatchQueue.main.async {
-                guard let data = data else {
-                    return
-                }
-                
-                let fireBanInfo = try? XMLDecoder().decode(FireDangerMap.self, from: data)
-                self.fireBanInfo = fireBanInfo
-            }
-            
-        }).resume()
+    @MainActor
+    private func loadDangerData() async {
+        let request = URLRequest(url: LocationObserver.fireDangerURL)
+        let result = try? await URLSession.shared.data(for: request)
+
+        guard let data = result?.0 else { return }
+
+        let fireBanInfo = try? XMLDecoder().decode(FireDangerMap.self, from: data)
+        self.fireBanInfo = fireBanInfo
     }
 }
 
