@@ -25,12 +25,15 @@ struct InformationView: View {
             
             HStack(alignment: .center, spacing: 0) {
                 VStack {
-                    Button("button_title_danger_ratings") {
+                    
+                    Button {
                         tabSelection = 0
+                    } label: {
+                        Text("button_title_danger_ratings")
+                            .frame(width: geometry.size.width / 2, height: 50)
+                            .background(Color.clear)
+                            .foregroundColor(Color("darkTint"))
                     }
-                    .frame(width: geometry.size.width / 2, height: 50)
-                    .background(Color.clear)
-                    .foregroundColor(Color("darkTint"))
                     
                     Rectangle()
                         .frame(height: 2)
@@ -39,12 +42,15 @@ struct InformationView: View {
                 }
                 
                 VStack {
-                    Button("button_title_fire_ban_rules") {
+                    
+                    Button {
                         tabSelection = 1
+                    } label: {
+                        Text("button_title_fire_ban_rules")
+                            .frame(width: geometry.size.width / 2, height: 50)
+                            .background(Color.clear)
+                            .foregroundColor(Color("darkTint"))
                     }
-                    .frame(width: geometry.size.width / 2, height: 50)
-                    .foregroundColor(Color("darkTint"))
-                    .background(Color.clear)
                     
                     Rectangle()
                         .frame(height: 2)
