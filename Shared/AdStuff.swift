@@ -43,8 +43,6 @@ struct Banner: View {
     }
 }
 
-struct Banner_Previews: PreviewProvider {
-    static var previews: some View {
-        Banner(bannerID: Configuration.bannerID(), width: UIScreen.main.bounds.width)
-    }
+#Preview {
+    Banner(bannerID: Configuration.bannerID(), width: UIScreen.main.bounds.width)
 }

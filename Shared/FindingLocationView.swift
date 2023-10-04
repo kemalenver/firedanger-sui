@@ -48,8 +48,6 @@ struct FindingLocationView: View {
     }
 }
 
-struct FindingLocationView_Previews: PreviewProvider {
-    static var previews: some View {
-        FindingLocationView()
-    }
+#Preview {
+    FindingLocationView()
 }

@@ -117,7 +117,6 @@
 				CF8B9709296BB5A000C27E05 /* FindingLocationView.swift */,
 				CF32981928B5A88300021B83 /* FireDataView.swift */,
 				CF8B7D0C2A9377900061C2A1 /* AdStuff.swift */,
-				CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */,
 				CFAA5C7D2AAB23F80027189B /* RequestLocationView.swift */,
 				CF888FC5278019B9003CA93B /* Assets.xcassets */,
 				CFBAA5A22ACCE8CB0027924A /* Localizable.xcstrings */,
@@ -156,6 +155,7 @@
 				CF8B9706296B98E700C27E05 /* UnsupportedLocationView.swift */,
 				CF8B970F296BB60700C27E05 /* NoDataErrorView.swift */,
 				CF8B970C296BB5BF00C27E05 /* LocationNotFoundView.swift */,
+				CFAA5C7A2AAB23D10027189B /* LocationDeniedView.swift */,
 			);
 			path = "Error States";
 			sourceTree = "<group>";

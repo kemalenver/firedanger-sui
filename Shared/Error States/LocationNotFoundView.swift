@@ -56,9 +56,7 @@ struct LocationNotFoundView: View {
                     }
                 }
                 
-                Rectangle()
-                    .frame(height: 50.0)
-                    .foregroundColor(.red)
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
             }.padding(.bottom, 16)
         }
         .frame(
@@ -70,8 +68,6 @@ struct LocationNotFoundView: View {
     }
 }
 
-struct LocationNotFoundView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationNotFoundView()
-    }
+#Preview {
+    return LocationNotFoundView()
 }

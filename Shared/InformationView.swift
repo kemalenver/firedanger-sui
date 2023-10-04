@@ -71,8 +71,6 @@ struct InformationView: View {
     }
 }
 
-struct InformationView_Previews: PreviewProvider {
-    static var previews: some View {
-        InformationView()
-    }
+#Preview {
+    InformationView()
 }

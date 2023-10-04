@@ -93,10 +93,7 @@ struct FireBanDescriptionView: View {
                         .tint(forecastModel.tintColor())
                 }
                 .sheet(isPresented: $isPresentWebView) {
-                    
                     InformationView()
-                    
-                    
                 }
             }
         }

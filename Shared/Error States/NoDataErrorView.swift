@@ -54,6 +54,8 @@ struct NoDataErrorView: View {
                                 .foregroundColor(Color("darkTint"))
                         }
                     }
+                    
+                    Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
                 }
             }.padding(.bottom, 16)
         }
@@ -66,8 +68,6 @@ struct NoDataErrorView: View {
     }
 }
 
-struct NoDataErrorView_Previews: PreviewProvider {
-    static var previews: some View {
-        NoDataErrorView()
-    }
+#Preview {
+    return NoDataErrorView()
 }

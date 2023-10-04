@@ -65,8 +65,6 @@ struct UnsupportedLocationView: View {
     }
 }
 
-struct UnsupportedLocationView_Previews: PreviewProvider {
-    static var previews: some View {
-        UnsupportedLocationView()
-    }
+#Preview {
+    return UnsupportedLocationView()
 }
