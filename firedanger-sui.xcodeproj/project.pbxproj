@@ -457,9 +457,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kemalenver.firenofire;
 				PRODUCT_NAME = "Fire Danger";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -490,9 +490,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kemalenver.firedanger-sui";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kemalenver.firenofire;
 				PRODUCT_NAME = "Fire Danger";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
