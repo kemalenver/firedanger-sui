@@ -56,7 +56,7 @@ struct InformationView: View {
                         .foregroundColor(tomorrowUnderLineTont)
                         .padding(0)
                 }
-            }
+            }.background(Color("lightTint"))
         }
         .frame(height: 52)
         
