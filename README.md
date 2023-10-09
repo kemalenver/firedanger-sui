@@ -18,6 +18,6 @@ I would love help with:
 * Including widgets
 * Watch Extensions
 
-# License
+## License
 
 The source code license is the GNU GENERAL PUBLIC LICENSE v3, with an attached commons clause. This means you can use the source code freely for none commercial purposes. (this is to stop anyone from charging for the app).
