@@ -29,13 +29,14 @@ struct InformationView: View {
                         tabSelection = 0
                     } label: {
                         Text("button_title_danger_ratings")
+                            .fontWeight(.medium)
                             .frame(width: geometry.size.width / 2, height: 50)
                             .background(Color.clear)
                             .foregroundColor(Color("darkTint"))
                     }
                     
                     Rectangle()
-                        .frame(height: 2)
+                        .frame(height: 3)
                         .foregroundColor(todayUnderLineTont)
                         .padding(0)
                 }
@@ -46,13 +47,14 @@ struct InformationView: View {
                         tabSelection = 1
                     } label: {
                         Text("button_title_fire_ban_rules")
+                            .fontWeight(.medium)
                             .frame(width: geometry.size.width / 2, height: 50)
                             .background(Color.clear)
                             .foregroundColor(Color(("darkTint")))
                     }
                     
                     Rectangle()
-                        .frame(height: 2)
+                        .frame(height: 3)
                         .foregroundColor(tomorrowUnderLineTont)
                         .padding(0)
                 }
