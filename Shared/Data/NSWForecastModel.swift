@@ -45,6 +45,14 @@ class NSWForecastModel {
     private let day: Day
     
     init(locationProperties: Properties, district: District, day: Day) {
+        // TODO: Move to testing moduke. Used for sanity testing various combos
+        
+//        var district = district
+//        district.DangerLevelToday = "HIGH"
+//        district.FireBanToday = "no"
+//        district.DangerLevelTomorrow = "CATASTROPHIC"
+//        district.FireBanTomorrow = "yes"
+
         self.locationProperties = locationProperties
         self.district = district
         self.day = day
