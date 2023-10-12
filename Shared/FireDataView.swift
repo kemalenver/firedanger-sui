@@ -19,7 +19,7 @@ struct FireDataView: View {
             VStack(alignment: .center, spacing: 64) {
                 FireBanView(forecastModel: forecastModel)
                 FireBanDescriptionView(forecastModel: forecastModel)
-            }
+            }.padding(.top, 48)
             
             Spacer()
             
@@ -31,12 +31,12 @@ struct FireDataView: View {
                         .foregroundColor(forecastModel.tintColor())
                     Text(forecastModel.locationText())
                         .font(.callout)
+                        .fontWeight(.medium)
                         .foregroundColor(forecastModel.tintColor())
                 }
                 
                 Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
             }
-            .padding(.bottom, 16)
         }
         .frame(
             maxWidth: .infinity,
@@ -65,7 +65,7 @@ struct FireBanView: View {
                     .frame(width: 141, height: 141)
                     .foregroundColor(forecastModel.tintColor())
             }
-        }
+        }.frame(width: 141, height: 141)
     }
 }
 
