@@ -68,14 +68,16 @@ struct MainView: View {
                             tabSelection = 0
                         } label: {
                             Text("today")
+                                .fontWeight(.medium)
                                 .frame(width: geometry.size.width / 2, height: 50)
                                 .background(Color.clear)
+                                .font(.body)
                                 .foregroundColor(todayButtonTint)
                             
                         }
                         
                         Rectangle()
-                            .frame(height: 2)
+                            .frame(height: 3)
                             .foregroundColor(todayUnderLineTont)
                             .padding(0)
                     }
@@ -85,14 +87,16 @@ struct MainView: View {
                             tabSelection = 1
                         } label: {
                             Text("tomorrow")
+                                .fontWeight(.medium)
                                 .frame(width: geometry.size.width / 2, height: 50)
                                 .background(Color.clear)
+                                .font(.body)
                                 .foregroundColor(todayButtonTint)
                             
                         }
                         
                         Rectangle()
-                            .frame(height: 2)
+                            .frame(height: 3)
                             .foregroundColor(tomorrowUnderLineTont)
                             .padding(0)
                     }

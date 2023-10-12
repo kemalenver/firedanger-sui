@@ -78,7 +78,7 @@ class NSWForecastModel {
             return Color("loadingTint")
         }
         
-        return [WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
+        return [WarningLevel.level1, WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
     }
     
     func banIconVisible() -> Bool {
