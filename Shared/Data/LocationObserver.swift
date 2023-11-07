@@ -58,6 +58,18 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
         
         loadRegionData()
         Task { await loadDangerData() }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(appEnteredForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func appEnteredForeground() {
+        self.appState = .fetchingFireDangerData
+        loadRegionData()
+        Task { await loadDangerData() }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -91,9 +103,7 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
 extension LocationObserver {
     
     private func loadRegionData() {
-        guard let url = Bundle.main.url(forResource: "regions", withExtension: "json") else {
-            return
-        }
+        let url = Bundle.main.url(forResource: "regions", withExtension: "json")!
         
         do {
             let data = try Data(contentsOf: url)
