@@ -8,6 +8,7 @@
 import Foundation
 
 struct Configuration {
+    static let fireDangerXMLURL = URL(string: "https://www.rfs.nsw.gov.au/feeds/fdrToban.xml")!
     static let fireDangerRatingURL = "https://www.rfs.nsw.gov.au/plan-and-prepare/fire-danger-ratings"
     static let rulesURL = "https://www.rfs.nsw.gov.au/fire-information/fdr-and-tobans/total-fire-ban-rules"
     static let advertWidth: CGFloat = 320

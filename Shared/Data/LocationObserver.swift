@@ -26,9 +26,7 @@ enum AppState {
 }
 
 class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
-    
-    private static let fireDangerURL = URL(string: "https://www.rfs.nsw.gov.au/feeds/fdrToban.xml")!
-    
+
     @Published var selectedRegion = "NA"
     @Published var appState: AppState = .fetchingFireDangerData
     
@@ -82,16 +80,11 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
             manager.requestWhenInUseAuthorization()
         } else if manager.authorizationStatus == .denied {
             appState = .locationPermissionDenied
-        } 
-//        else {
-//            appState = .userLocationNotFound
-//            manager.requestWhenInUseAuthorization()
-//        }
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Location failed: \((error as NSError).description)")
-//        appState = .userLocationNotFound
+        debugPrint("Location failed: \((error as NSError).description)")
     }
 }
 
@@ -121,7 +114,7 @@ extension LocationObserver {
     
     @MainActor
     private func loadDangerData() async {
-        let request = URLRequest(url: LocationObserver.fireDangerURL)
+        let request = URLRequest(url: Configuration.fireDangerXMLURL)
         let result = try? await URLSession.shared.data(for: request)
 
         guard let data = result?.0 else { return }
