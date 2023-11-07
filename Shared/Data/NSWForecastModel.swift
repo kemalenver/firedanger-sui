@@ -86,38 +86,31 @@ class NSWForecastModel {
             return Color("loadingTint")
         }
         
-        return [WarningLevel.level1, WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
+        return [WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
     }
     
     func banIconVisible() -> Bool {
-       if self.day == .today {
-            return district.FireBanToday.lowercased() == "yes"
-        } else {
-            return district.FireBanTomorrow.lowercased() == "yes"
-        }
+        return district.FireBanTomorrow.lowercased() == "yes"
     }
     
     func fireBanText() -> String {
-        if self.day == .today {
-            return district.FireBanToday.lowercased() == "no" ? "No fire ban in place" : "Fire ban in place"
-        } else {
-            if warningLevel == .level0 {
-                return "Tomorrow’s ratings are issued each afternoon"
+        if day == .tomorrow {
+            guard ["yes", "no"].contains(district.FireBanTomorrow.lowercased()) else {
+                return "Tomorrow's ratings are issues each afternoon"
             }
-            
             return district.FireBanTomorrow.lowercased() == "no" ? "No fire ban in place" : "Fire ban in place"
         }
+        return district.FireBanToday.lowercased() == "no" ? "No fire ban in place" : "Fire ban in place"
     }
     
     func fireDangerText() -> String {
-        if self.day == .today {
-            return "Fire danger rating: " + (district.DangerLevelToday?.capitalized ?? "Unknown")
-        } else {
-            if warningLevel == .level0 {
-                return "Check back later "
+        if day == .tomorrow {
+            guard ["yes", "no"].contains(district.FireBanTomorrow.lowercased()) else {
+                return "Check back later"
             }
             return "Fire danger rating: " + (district.DangerLevelTomorrow?.capitalized ?? "Unknown")
         }
+        return "Fire danger rating: " + (district.DangerLevelToday?.capitalized ?? "Unknown")
     }
     
     func locationText() -> String {
