@@ -68,7 +68,6 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     @objc func appEnteredForeground() {
         self.appState = .fetchingFireDangerData
-        loadRegionData()
         Task { await loadDangerData() }
     }
     
