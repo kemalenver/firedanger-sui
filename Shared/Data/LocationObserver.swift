@@ -44,7 +44,7 @@ class LocationObserver: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     var fireBanInfo: FireDangerMap? {
         didSet {
-            self.manager.startUpdatingLocation()
+            self.manager.requestLocation()
         }
     }
     
