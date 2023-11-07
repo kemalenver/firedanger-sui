@@ -112,6 +112,7 @@ struct MainView: View {
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .interactive))
             .ignoresSafeArea()
+            .prefersPersistentSystemOverlaysHidden()
         }
     }
 }
