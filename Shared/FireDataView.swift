@@ -35,7 +35,7 @@ struct FireDataView: View {
                         .foregroundColor(forecastModel.tintColor())
                 }
                 
-                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth)
+                Banner(bannerID: Configuration.bannerID(), width: Configuration.advertWidth).padding(.bottom, 16)
             }
         }
         .frame(
