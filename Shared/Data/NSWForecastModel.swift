@@ -48,9 +48,9 @@ class NSWForecastModel {
         // TODO: Move to testing moduke. Used for sanity testing various combos
         
 //        var district = district
-//        district.DangerLevelToday = "MODERATE"
+//        district.DangerLevelToday = "NONE"
 //        district.FireBanToday = "no"
-//        district.DangerLevelTomorrow = "CATASTROPHIC"
+//        district.DangerLevelTomorrow = "HIGH"
 //        district.FireBanTomorrow = "yes"
 
         self.locationProperties = locationProperties
