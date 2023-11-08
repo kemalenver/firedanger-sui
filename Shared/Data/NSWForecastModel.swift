@@ -48,7 +48,7 @@ class NSWForecastModel {
         // TODO: Move to testing moduke. Used for sanity testing various combos
         
 //        var district = district
-//        district.DangerLevelToday = "HIGH"
+//        district.DangerLevelToday = "MODERATE"
 //        district.FireBanToday = "no"
 //        district.DangerLevelTomorrow = "CATASTROPHIC"
 //        district.FireBanTomorrow = "yes"
@@ -86,11 +86,15 @@ class NSWForecastModel {
             return Color("loadingTint")
         }
         
-        return [WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
+        return [WarningLevel.level1, WarningLevel.level4].contains(self.warningLevel) ? Color("lightTint") : Color("darkTint")
     }
     
     func banIconVisible() -> Bool {
-        return district.FireBanTomorrow.lowercased() == "yes"
+        if day == .tomorrow {
+            return district.FireBanTomorrow.lowercased() == "yes"
+        } else {
+            return district.FireBanToday.lowercased() == "yes"
+        }
     }
     
     func fireBanText() -> String {
